@@ -1,0 +1,45 @@
+{
+  "name": "node-grpc-graphql",
+  "version": "0.0.1",
+  "description": "Microservices Nodejs with gRPC and GraphQL",
+  "main": "dist/app.js",
+  "scripts": {
+    "start": "node ./dist/app.js",
+    "start:dev": "nodemon --watch './src/**/*.ts' --exec 'ts-node' ./src/app.ts",
+    "start:docker": "docker-compose up"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saefullohmaslul/Node-gRPC-GraphQL.git"
+  },
+  "keywords": [
+    "node",
+    "microservices",
+    "gRPC",
+    "GraphQL"
+  ],
+  "author": "Saefulloh Maslul",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/saefullohmaslul/Node-gRPC-GraphQL/issues"
+  },
+  "homepage": "https://github.com/saefullohmaslul/Node-gRPC-GraphQL#readme",
+  "dependencies": {
+    "@types/express": "^4.17.2",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "@types/dotenv": "^8.2.0",
+    "@types/es6-promisify": "^6.0.0",
+    "@types/node": "^13.1.6",
+    "@types/redis": "^2.8.14",
+    "dotenv": "^8.2.0",
+    "es6-promisify": "^6.0.2",
+    "redis": "^2.8.0",
+    "ts-node": "^8.6.1",
+    "tslib": "^1.10.0",
+    "typescript": "^3.7.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
